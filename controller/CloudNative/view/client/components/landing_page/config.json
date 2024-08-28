@@ -1,0 +1,8 @@
+{
+  "script":"landing_page/Landing_page",
+  "id":"Landing_page",
+  "data": {},
+  "dependencies":{
+    "@eui/lit-component":"0.10.x"
+  }
+}

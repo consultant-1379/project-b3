@@ -1,0 +1,8 @@
+{
+  "script":"questions/Questions",
+  "id":"Questions",
+  "data": {},
+  "dependencies":{
+    "@eui/lit-component":"0.10.x"
+  }
+}

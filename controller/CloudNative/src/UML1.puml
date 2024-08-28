@@ -1,0 +1,48 @@
+@startuml
+
+class QuesController{
+    GetQuestionFromStageImp getQFromStage;
+    ShowStageImp showStage;
+    GetSubQuestionsFromStageImp getSubquestionsFromStageImp;
+    UserService userService;
+
+    ResponseEntity<> showSubQuestion(int)
+    ResponseEntity<> showLeadingQuestion(int)
+    Iterable<SurveyUser> listUsers()
+    void addUser()
+    ResponseEntity<> getUser()
+}
+class LeadingQuestions{
+
+int id
+Stage stage
+String desc
+
+ int getID()
+ Stage getStage()
+ String getDescription()
+}
+
+
+class SubQuestions
+class User
+class Response
+Interface AnswerQuestions
+Interface StoreResponse
+Interface GeneratePDF
+class ManipulateAnswer
+
+
+
+User <-- Response
+User <|--AnswerQuestions
+ManipulateAnswer <|-- StoreResponse
+ManipulateAnswer <|-- GeneratePDF
+
+
+enum Stage {
+Culture
+Service
+}
+
+@enduml
